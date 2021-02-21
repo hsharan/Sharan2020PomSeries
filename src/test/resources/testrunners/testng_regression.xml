@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng1.0.dtd">
+
+<suite verbose="2" parallel="tests" threadcount="3"
+	name="Test automtion regression suite">
+
+
+	<test name="Login page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url"
+			value="http://sharantest6701/dist/#/login" />
+		<classes>
+			<class name="ddl.qa.qs.test.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="Home page Test - Chrome">
+		<!-- <parameter name="browser" value="chrome" /> -->
+		<classes>
+			<class name="ddl.qa.qs.test.HomePageTest" />
+		</classes>
+	</test>
+
+
+
+</suite>
+
+
+
